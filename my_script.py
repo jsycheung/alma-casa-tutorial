@@ -7,7 +7,7 @@ listobs(vis=vis)
 # There are 5 fields, meaning the telescope observed 5 objects, you can see the nature of the objects in scan intent
 # For example, you can see J0522-364 is a bandpass calibrator, Ceres is a amplitude calibrator, TW Hya is the observation target (what you are actually interested in)!
 
-plotms(vis='sis14_twhya_calibrated_flagged.ms', xaxis='u', yaxis='v', avgchannel='10000', avgspw=False, avgtime='1e9', avgscan=False, coloraxis="field", showgui=True)
+plotms(vis='sis14_twhya_selfcal.ms', xaxis='u', yaxis='v', avgchannel='10000', avgspw=False, avgtime='1e9', avgscan=False, coloraxis="field", showgui=True)
 
 #Then we can make the continuum image!
 tclean(vis='sis14_twhya_selfcal.ms',
