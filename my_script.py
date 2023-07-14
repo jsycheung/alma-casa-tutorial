@@ -12,6 +12,8 @@ plotms(vis=vis, xaxis='u', yaxis='v', avgchannel='10000', avgspw=False, avgtime=
 # if you run into an display environment variable error, quit casa and run this command in the terminal. Then open casa again and it should work. remember to assign the ms name to vis again.
 export DISPLAY=:1
 
+# After running the above plotms command, you can see the uv plot! This is the visibility. If we do fourier transform on the uv plot, then you will get the sky brightness.
+
 #Then we can make the continuum image!
 tclean(vis='sis14_twhya_selfcal.ms',
        imagename='phase_cal',
