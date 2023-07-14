@@ -9,6 +9,8 @@ listobs(vis=vis)
 # For example, you can see J0522-364 is a bandpass calibrator, Ceres is a amplitude calibrator, TW Hya is the observation target (what you are actually interested in)!
 
 plotms(vis=vis, xaxis='u', yaxis='v', avgchannel='10000', avgspw=False, avgtime='1e9', avgscan=False, coloraxis="field", showgui=True)
+# if you run into an display environment variable error, quit casa and run this command in the terminal. Then open casa again and it should work. remember to assign the ms name to vis again.
+export DISPLAY=:1
 
 #Then we can make the continuum image!
 tclean(vis='sis14_twhya_selfcal.ms',
